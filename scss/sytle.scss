@@ -1,0 +1,84 @@
+@font-face {
+    font-family: Prata;
+    src: url(../Prata/Prata-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: Prata;
+}
+%flex{
+    display: flex;
+    align-items: center;
+}
+.navbar{
+    padding: 20px 40px;
+    @extend %flex;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    background: #FFFFFF;
+    h2{
+        font-size: 30px;
+    }
+    .navbar__link{
+        @extend %flex;
+        gap: 20px;
+        ul{
+            font-size: 20px;
+            @extend %flex;
+            gap: 20px;
+            li{
+                .link{
+                    color: #191919;
+                }
+            }
+        }
+        a{
+            img{
+                width: 30px;
+            }
+        }
+    }
+}
+header{
+    padding: 20px 40px;
+    display: flex;
+    h3{
+        font-size: 52px;
+    }
+    .header__image{
+        display: flex;
+        width: 48%;
+        img{
+            width: 340px;
+            height: 340px;
+            border-radius: 50%;
+            margin: auto;
+        }
+    }
+}
+.aside{
+    padding: 80px 40px;
+    .aside__img{
+        display: flex;
+        justify-content: space-around;
+    }
+    .aside__title{
+       text-align: center;
+    font-size: 50px;
+   }
+}
+footer{
+    @extend %flex; 
+    justify-content: space-around;
+    padding: 50px 0;
+    p, a{
+        img{
+            width: 30px;
+        }
+    }
+}
